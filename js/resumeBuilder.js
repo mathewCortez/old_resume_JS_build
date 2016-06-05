@@ -5,13 +5,13 @@ var bio = {
     "name": "Mathew Cortez",
     "role": "Web Developer",
     "contacts": {
-        "mobile": "973-605-0831",
+        "mobile": "973-970-0931",
         "email": "mcortez121@gmail.com",
         "github": "mathezCortez",
-        "twitter": "@americo",
+        "twitter": "none",
         "location": "Randolph"
     },
-    "welcomeMessage": "Team player who could use a job",
+    "welcomeMessage": "Current IT intern for DSV Air & Sea and learning more about front-end web development.  Looking for work experience in this field.",
     "skills": ["HTML", "CSS", "3DS MAX", "Jokes"],
     "biopic": "images/author.png",
     "display": function() {
@@ -154,9 +154,9 @@ var education = {
 
 var projects = {
     "projects": [{
-        "title": "Samples Project 1",
-        "dates": "2016",
-        "description": "make up words to go here",
+        "title": "Frontend-nanodegree-arcade-game",
+        "dates": "MAY 2016",
+        "description": "Clone of the classic game, Frogger.  Udacity provided the art assets and game engine.  Coded player, enemies, and other game entities in JavaScript's object-oriented pseudo-classical style.  Created enemt subclasses with different movement patterns and sprites (edited art assets in GIMP).",
         "images": [
             "images/sunflower.png",
             "images/appify.png"
