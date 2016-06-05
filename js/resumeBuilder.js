@@ -9,7 +9,7 @@ var bio = {
         "email": "mcortez121@gmail.com",
         "github": "mathezCortez",
         "twitter": "none",
-        "location": "Randolph, NJ"
+        "location": "Randolph"
     },
     "welcomeMessage": "Current IT intern for DSV Air & Sea and learning more about front-end web development.  Looking for work experience in this field.",
     "skills": ["HTML", "CSS", "3DS MAX", "Jokes"],
