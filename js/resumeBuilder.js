@@ -12,7 +12,7 @@ var bio = {
         "location": "Randolph, NJ"
     },
     "welcomeMessage": "Current IT intern for DSV Air & Sea and learning more about front-end web development.  Looking for work experience in this field.",
-    "skills": ["HTML", "CSS", "3DS MAX", "Jokes"],
+    "skills": ["HTML", "CSS", "JavaScript", "3DS MAX"],
     "biopic": "images/author.png",
     "display": function() {
         var formattedName = HTMLheaderName.replace("%data%", bio.name);
