@@ -54,7 +54,7 @@ var work = {
             "title": "IT Intern",
             "location": "Clark, NJ, US",
             "dates": "May 2016 - present",
-            "description": "Designed a digital signage to present on the TV’s around the building.  Created user profiles for the companies preffered software (CargoWise One). Resolved technigcal problems with Cherwell (hardware malfunctions, system password resets,  connectivity problems).  Migrated users from a recetly acquired company to the DSV network and programs."
+            "description": "Designed a digital signage to present on the TV’s around the building.  Created user profiles for the company's prefered software (CargoWise One). Resolved technical problems using Cherwell (hardware malfunctions, system password resets, connectivity problems).  Migrated users from a recently acquired company to the DSV network and programs."
         }, {
             "employer": "Groupe SEB",
             "title": "IT Intern",
