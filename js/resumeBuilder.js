@@ -158,7 +158,7 @@ var projects = {
         "dates": "MAY 2016",
         "description": "Clone of the classic game, Frogger.  Udacity provided the art assets and game engine.  Coded player, enemies, and other game entities in JavaScript's object-oriented pseudo-classical style.  Created enemt subclasses with different movement patterns and sprites (edited art assets in GIMP).",
         "images": [
-            "images/arcade game.png",
+            "images/arcade game.PNG",
             
         ]
     }],
