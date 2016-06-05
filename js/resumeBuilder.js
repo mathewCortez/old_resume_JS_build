@@ -51,10 +51,18 @@ var bio = {
 var work = {
     "jobs": [{
             "employer": "DSV AIR & SEA",
-            "title": "Intern",
+            "title": "IT Intern",
             "location": "Clark, NJ, US",
-            "dates": "May 2015-August 2015",
-            "description": "During my internship I was responsible for troubleshooting and maintaining PC's, as well as helping improve functionality and profitability for computer systems."
+            "dates": "May 2016 - present",
+            "description": "Designed a digital signage to present on the TV’s around the building.  Created user profiles for the companies preffered software (CargoWise One). Resolved technigcal problems with Cherwell (hardware malfunctions, system password resets,  connectivity problems).  Migrated users from a recetly acquired company to the DSV network and programs."
+        }, 
+         {
+            "employer": "Groupe SEB",
+            "title": "IT Intern",
+            "location": "West Orange, NJ, US",
+            "dates": "May 2015 - August 2015",
+            "description": "Managed help desk request in a timely matter.  Maintained PC’s to keep there perfromance high and functional.
+"
         }, {
             "employer": "Kurt Devonshire Films",
             "title": "Production Assistant",
