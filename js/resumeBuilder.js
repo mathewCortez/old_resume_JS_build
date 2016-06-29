@@ -162,9 +162,21 @@ var projects = {
     "projects": [{
         "title": "Frontend-nanodegree-arcade-game",
         "dates": "MAY 2016",
-        "description": "Clone of the classic game, Frogger.  Udacity provided the art assets and game engine.  Coded player, enemies, and other game entities in JavaScript's object-oriented pseudo-classical style.  Created enemy subclasses with different movement patterns and sprites (edited art assets in GIMP).",
+        "description": "An HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript. This game is a clone of the classical game frogger. You will be trying to reach the water while avoiding the bugs. The bugs will be scrolling across the screen at a random rate and appearing in a random column. There are five bugs in total that will be cycled. Each time the player reaches the water they will receive one point added to the scoreboard at the top of the page. The goal is to see how many points you can score in your three lives.",
         "images": [
             "images/arcade game.PNG",
+            
+        ]
+    },
+                {
+        "title": "Frontend-nanodegree-mobile-portfolio",
+        "dates": "JUNE 2016",
+        "description": "Optimized an inefficient web application's JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90. I got the website to a PageSpeed score of 94 on mobile and 96 on desktop. To get these scores I had to compress and resize the images, inline the CSS/JS, minify the files. The site was originally running at under 30fps while scrolling (which is the most used feature of the size) and changing the sizes or the pizza. The loops in each of these function did a lot of unnecessary calculations and poorly constructed. After the fixes were made the sight was running above 60fps.",
+        "images": [
+            "images/mobileOg-min.PNG",
+            "images/desktopOg-min.PNG",
+            "images/moblieDone-min.png",
+            "images/desktopDone-min.png",
             
         ]
     }],
