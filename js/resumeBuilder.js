@@ -12,7 +12,7 @@ var bio = {
         "location": "Randolph, NJ"
     },
     "welcomeMessage": "Current IT intern for DSV Air & Sea and learning more about front-end web development.  Looking for work experience in this field.",
-    "skills": ["HTML", "CSS", "JavaScript", "3DS MAX"],
+    "skills": ["HTML", "CSS", "JavaScript", "3DS MAX", "JQuery"],
     "biopic": "images/author.png",
     "display": function() {
         var formattedName = HTMLheaderName.replace("%data%", bio.name);
@@ -41,6 +41,8 @@ var bio = {
             formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
             $("#skills").append(formattedSkill);
             formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
+            $("#skills").append(formattedSkill);
+            formattedSkill = HTMLskills.replace("%data%", bio.skills[4]);
             $("#skills").append(formattedSkill);
         }
     }
