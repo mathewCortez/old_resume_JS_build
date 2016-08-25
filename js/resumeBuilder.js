@@ -11,7 +11,7 @@ var bio = {
         "twitter": "none",
         "location": "Randolph, NJ"
     },
-    "welcomeMessage": "Current IT intern for DSV Air & Sea and learning more about front-end web development.  Looking for work experience in this field.",
+    "welcomeMessage": "Current studying abroad in London at City University and learning more about front-end web development.  Looking for work experience in this field.",
     "skills": ["HTML", "CSS", "JavaScript", "3DS MAX", "JQuery"],
     "biopic": "images/author.png",
     "display": function() {
@@ -55,7 +55,7 @@ var work = {
             "employer": "DSV AIR & SEA",
             "title": "IT Intern",
             "location": "Clark, NJ, US",
-            "dates": "May 2016 - present",
+            "dates": "May 2016 - August 2016",
             "description": "Designed a digital signage to present on the TV’s around the building.  Created user profiles for the company's prefered software (CargoWise One). Resolved technical problems using Cherwell (hardware malfunctions, system password resets, connectivity problems).  Migrated users from a recently acquired company to the DSV network and programs."
         }, {
             "employer": "Groupe SEB",
@@ -162,7 +162,16 @@ var education = {
 
 var projects = {
     "projects": [{
-        "title": "Frontend-nanodegree-arcade-game",
+        "title": "<a href='map/index.html' target='_blank'>Frontend-nanodegree-neighborhood-map -- Click to view</a>",
+        "dates": "AUGUST 2016",
+        "description": "A single-page web application, built using the Knockout framework, that displays a Google Map of an area and various points of interest. The map displays concerts that are happening today in Boston. The search bar can be used to narrow down the concerts by name. The concert information come from Jambase through an AJAX call. If the user clicks on the map marker then the concert information will be displayed. It will show the concert artist, venue, address, and a URL to purchase a ticket if Jambase has a URL for that concert.",
+        "images": [
+            "images/map-ajax.png",
+            
+        ]
+    },
+        {
+        "title": "<a href='game/index.html' target='_blank'>Frontend-nanodegree-arcade-game -- Click to view</a>",
         "dates": "MAY 2016",
         "description": "An HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript. This game is a clone of the classical game frogger. You will be trying to reach the water while avoiding the bugs. The bugs will be scrolling across the screen at a random rate and appearing in a random column. There are five bugs in total that will be cycled. Each time the player reaches the water they will receive one point added to the scoreboard at the top of the page. The goal is to see how many points you can score in your three lives.",
         "images": [
@@ -170,8 +179,8 @@ var projects = {
             
         ]
     },
-                {
-        "title": "Frontend-nanodegree-mobile-portfolio",
+        {
+        "title": "<a href='webOpt/index.html' target='_blank'>Frontend-nanodegree-mobile-portfolio -- Click to view</a>",
         "dates": "JUNE 2016",
         "description": "Optimized an inefficient web application's JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90. I got the website to a PageSpeed score of 94 on mobile and 96 on desktop. To get these scores I had to compress and resize the images, inline the CSS/JS, minify the files. The site was originally running at under 30fps while scrolling (which is the most used feature of the size) and changing the sizes or the pizza. The loops in each of these function did a lot of unnecessary calculations and poorly constructed. After the fixes were made the sight was running above 60fps.",
         "images": [

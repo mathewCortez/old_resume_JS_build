@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+}
+
+#container {
+    width: 100%;
+}
+
+#score {
+    font-size: 2em;
+    margin: 0 auto;
+    width: 50%;
+}
+
+#heart {
+    font-size: 2em;
+    margin: 0 auto;
+    width: 50%;
+}

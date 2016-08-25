@@ -1,0 +1,71 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+/*http://www.w3schools.com/css/css_positioning.asp - used this link to figure out how to position my elements over eachother*/
+#map-canvas {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.location {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 1.5em;
+}
+#form-container {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    z-index: 3;
+    overflow: hidden;
+}
+#info-window {
+    max-width: 175px;
+}
+#concert-list-container {
+    height: 75vh;
+    overflow: auto;
+}
+#concert-list {
+    padding: 0;
+    list-style-type: none;
+    cursor: pointer;
+}
+h1 {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 1.5em;
+}
+#concert-list-item {
+    padding: 0;
+    list-style-type: none;
+    list-style-position: inside;
+    cursor: pointer;
+    border-bottom: 1px dotted #000000;
+}
+#attribution {
+    height: 30px;
+}
+#list-overlay {
+    position: absolute;
+    height: 91vh;
+    opacity: 1.0;
+    top: 40px;
+    left: 38px;
+    z-index: 2;
+}
+#background {
+    position: absolute;
+    height: 91vh;
+    opacity: 0.8;
+    top: 40px;
+    left: 40px;
+    background-color: #a6a6a6;
+    z-index: 1;
+}
+@media screen and (max-width: 980px) {
+    h1, h4 {
+        font-size: 1em;
+    }
+}
