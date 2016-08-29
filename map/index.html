@@ -11,19 +11,22 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row-fluid">
-            <div class="col-xs-8 col-sm-6 col-md-6">
+    <div>
+        <div id="header" data-bind="click: toggleClass">
+            <a href="#" class="menu-icon-link"><span></span></a>
+        </div>
+        <div id="slide-menu" data-bind="css: { hideClass: changeClass()===true }">
+            <div class = "forms">
                 <form id="form-container" class="form-container" data-bind="submit: searchResults">
                     <label for="search"></label>
-                    <input type="text" id="search" placeholder="Search" data-bind="value: searchBar, valueUpdate: 'keyup'" autocomplete="off">
+                    <input type="text" id="search" placeholder="Search" data-bind="textInput: searchBar"/>
+                </form>
+                <form id="form-loc" class="form-loc" data-bind="submit: searchLoc">
+                    <p>Location (Zipcode):<br/> <input type="text" placeholder="Search Location" data-bind="value: searchLocation" autocomplete="off"/></p>
+                    <button type="submit">Submit</button>
                 </form>
             </div>
-        </div>
-        <div class="row-fluid">
-            <div>
-                <div id="map-canvas"></div>
-                <div class="col-xs-2 col-sm-2 col-md-2" id="list-overlay">
+            <div id="list-overlay">
                     <h4 class="location">Concerts today in Boston</h4>
                     <a href="http://www.JamBase.com" target="_top" title="JamBase Concert Search">
                         <img id="attribution" src="http://images.jambase.com/logos/jambase140x70.gif" alt="Search JamBase Concerts"/>
@@ -37,8 +40,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xs-2 col-sm-2 col-md-2" id="background"></div>
-            </div>
+                <div id="background"></div>
+        </div>
+        <div>
+            <div id="map-canvas"></div>
         </div>
     </div>
 

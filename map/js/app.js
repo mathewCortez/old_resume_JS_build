@@ -3,6 +3,7 @@ function ViewModel() {
     var self = this;
     var map, city, infoWindow;
     var jamBaseApi = '2c3r8g3yg69xqjsjbgy23h4c';
+    var geocoder = new google.maps.Geocoder();
 
     //Getting date for Jambase Api
     //http://stackoverflow.com/questions/1531093/how-to-get-current-date-in-javascript - this is where I found out how to find the date
@@ -27,10 +28,23 @@ function ViewModel() {
 
     //binding for search input, status and location
     this.searchBar = ko.observable();
-    this.searchLocation = ko.observable('Boston, MA');
+    this.searchLocation = ko.observable('02108');
     //value from search
     this.searchList = ko.observableArray([]);
     this.toggleVal = ko.observable('hide');
+    this.changeClass = ko.observable(false);
+    
+    this.toggleClass = function () {
+        console.log(this.changeClass());
+        if (this.changeClass() === false) {
+            this.changeClass(true);
+            console.log(this.changeClass());
+        }
+        else {
+            this.changeClass(false);
+            console.log(this.changeClass());
+        }
+    };
 
     //When a concert is clicked, this function goes to corresponding marker and open its info window.
     this.findMarker = function(clickedConcert) {
@@ -45,6 +59,48 @@ function ViewModel() {
         }
     };
 
+    this.searchLoc = function() {
+        
+        var newLat;
+        var newLng;
+        self.searchLocation();
+        self.currentConcerts([]);
+        self.searchList([]);
+        console.log(self.currentConcerts());
+        console.log(self.searchLocation());
+        self.mapMarkerList([]);
+//        mapMarkers(null);
+//        markers = [];
+        
+        function clearMarkers() {
+            
+        }
+        
+        getMusic(self.searchLocation());
+        
+        zipToCoord(self.searchLocation());
+
+        function zipToCoord(zipcode) {
+            geocoder.geocode({'address': zipcode + ', USA'},
+                function(results, status) {
+                    if (status == google.maps.GeocoderStatus.OK) {
+                        var point = results[0].geometry.location;
+                        newLat = point.lat();
+                        newLng = point.lng();
+                        console.log("new lat: " + newLat +" new lng: " + newLng);
+                    }
+                    moveMap(newLat, newLng);
+                });
+        }
+        function moveMap(lat, lng) {
+            console.log("Started recenter");
+            var newLatLng = new google.maps.LatLng(lat, lng);
+            map.panTo(newLatLng);
+        }
+        
+    
+    };
+    
     this.searchResults = function() {
         var searchElem = self.searchBar().toLowerCase();
         console.log('search elem: ' + searchElem);
@@ -135,6 +191,7 @@ function ViewModel() {
                         venueName = venue.Name;
                         venueAddress = venue.Address;
                         venueCity = venue.City;
+                        venueState = venue.State
                         venueZip = venue.ZipCode;
                         self.currentConcerts.push({
                             concertLat: venueLat,
@@ -143,6 +200,7 @@ function ViewModel() {
                             concertArtist: artist,
                             concertAddress: venueAddress,
                             concertCity: venueCity,
+                            concertState: venueState,
                             concertZip: venueZip,
                             concertUrl: ticketUrl
                         });
@@ -178,7 +236,7 @@ function ViewModel() {
             var geoLng = new google.maps.LatLng(lat, lng);
             var thisArtist = value.concertArtist;
 
-            var contentString = '<div id="info-window">' + '<h4>    Artist: ' + value.concertArtist + '</h4>' + '<h5> Venue: ' + value.concertVenueName + '</h5>' + '<h6> Address: ' + value.concertAddress + ', ' + value.concertCity + ', MA ' + value.concertZip + '</h6>';
+            var contentString = '<div id="info-window">' + '<h4>    Artist: ' + value.concertArtist + '</h4>' + '<h5> Venue: ' + value.concertVenueName + '</h5>' + '<h6> Address: ' + value.concertAddress + ', ' + value.concertCity + ', ' + value.concertState + " " + value.concertZip + '</h6>';
             
             if ( value.concertUrl !== "" ) {
                 contentString +=  '<a href="' + value.concertUrl + '">Get Tickets</a>';

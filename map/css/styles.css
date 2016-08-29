@@ -10,22 +10,74 @@ body {
     width: 100%;
     position: relative;
 }
+#header {
+    background-color: #a6a6a6;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    z-index: 12;
+}
+.menu-icon-link {
+    top: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0.5em 1em;
+    z-index: 14;
+}
+span, span:before, span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+  z-index: 13;
+}
+span:before {
+  top: -10px; 
+}
+span:after {
+  bottom: -10px;
+}
+#slide-menu {
+    position: fixed;
+    height: 100%;
+    width: 350px;
+    z-index: 11;
+    
+}
+
 .location {
     font-family: 'Yantramanav', sans-serif;
     font-size: 1.5em;
+    text-align: center;
 }
 #form-container {
     position: absolute;
     top: 10px;
-    left: 25px;
+    left: 55px;
     z-index: 3;
     overflow: hidden;
+
 }
+#form-loc {
+    position: absolute;
+    top: 40px;
+    left: 55px;
+    z-index: 9;
+    overflow: hidden;
+}
+
 #info-window {
     max-width: 175px;
 }
 #concert-list-container {
-    height: 75vh;
+    height: 65vh;
     overflow: auto;
 }
 #concert-list {
@@ -37,35 +89,85 @@ h1 {
     font-family: 'Yantramanav', sans-serif;
     font-size: 1.5em;
 }
+p {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 1.15em;
+}
 #concert-list-item {
     padding: 0;
+    margin-right: 2px;
     list-style-type: none;
     list-style-position: inside;
     cursor: pointer;
     border-bottom: 1px dotted #000000;
 }
+#concert-list-item:last-child {
+    padding-bottom: 20px;
+}
+.hideClass {
+    transform: translate3d(-30em, 0, 0);
+    transition: transform 0.3s;
+}
 #attribution {
-    height: 30px;
+    height: 40px;
+    padding-left: 50px;
 }
 #list-overlay {
+    padding: 5px;
     position: absolute;
-    height: 91vh;
+    height: 80vh;
     opacity: 1.0;
-    top: 40px;
-    left: 38px;
+    top: 120px;
+    left: 15px;
     z-index: 2;
+    overflow: hidden;
 }
 #background {
     position: absolute;
-    height: 91vh;
+    width: 350px;
+    height: 100vh;
     opacity: 0.8;
-    top: 40px;
-    left: 40px;
+
     background-color: #a6a6a6;
     z-index: 1;
 }
-@media screen and (max-width: 980px) {
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 5px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+::-webkit-scrollbar-button {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 550px) {
     h1, h4 {
-        font-size: 1em;
+        font-size: 1.2em;
+    }
+    #slide-menu {
+        width: 85%;
+    }
+    #background {
+        width: 85%;
+    }
+    #list-overlay {
+        width: 70%;
+    }
+    #form-container {
+        width: 60%;
+    }
+    #form-loc {
+        width: 60%;
     }
 }
