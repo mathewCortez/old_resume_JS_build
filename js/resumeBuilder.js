@@ -184,8 +184,8 @@ var projects = {
         "dates": "JUNE 2016",
         "description": "Optimized an inefficient web application's JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90. I got the website to a PageSpeed score of 94 on mobile and 96 on desktop. To get these scores I had to compress and resize the images, inline the CSS/JS, minify the files. The site was originally running at under 30fps while scrolling (which is the most used feature of the size) and changing the sizes or the pizza. The loops in each of these function did a lot of unnecessary calculations and poorly constructed. After the fixes were made the sight was running above 60fps.",
         "images": [
-            "images/mobileOg-min.PNG",
-            "images/desktopOg-min.PNG",
+            "images/mobileOg-min.png",
+            "images/desktopOg-min.png",
             "images/moblieDone-min.png",
             "images/desktopDone-min.png",
             
