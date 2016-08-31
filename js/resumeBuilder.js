@@ -11,7 +11,7 @@ var bio = {
         "twitter": "none",
         "location": "Randolph, NJ"
     },
-    "welcomeMessage": "Current studying abroad in London at City University and learning more about front-end web development.  Looking for work experience in this field.",
+    "welcomeMessage": "Currently studying abroad in London at City University and learning more about front-end web development.  Looking for work experience in this field.",
     "skills": ["HTML", "CSS", "JavaScript", "3DS MAX", "JQuery"],
     "biopic": "images/author.png",
     "display": function() {
@@ -166,7 +166,8 @@ var projects = {
         "dates": "AUGUST 2016",
         "description": "A single-page web application, built using the Knockout framework, that displays a Google Map of an area and various points of interest. The map displays concerts that are happening today in Boston. The search bar can be used to narrow down the concerts by name. The concert information come from Jambase through an AJAX call. If the user clicks on the map marker then the concert information will be displayed. It will show the concert artist, venue, address, and a URL to purchase a ticket if Jambase has a URL for that concert.",
         "images": [
-            "images/map-ajax.png",
+            "images/map-min.PNG",
+            "images/map-hide-min.PNG"
             
         ]
     },
