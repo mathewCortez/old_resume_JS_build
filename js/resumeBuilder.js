@@ -191,6 +191,15 @@ var projects = {
             "images/desktopDone-min.png",
             
         ]
+    },
+                {
+        "title": "<a href='catalog/templates/publichobbies.html' target='_blank'>Backend Catalog Project</a>",
+        "dates": "January 2017",
+        "description": "Catalog of Hobbies and the items need to take part in that hobby.  The prices of the items will also be listed to show the start up cost of getting into a hobby.  This project is my first dealing with backend programming.",
+        "images": [
+            
+            
+        ]
     }],
     "display": function() {
         for (var project in projects.projects) {
