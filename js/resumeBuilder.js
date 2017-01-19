@@ -124,6 +124,11 @@ var education = {
         "date": "2016",
         "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
 
+    }, {
+        "title": "Full Stack Web Development",
+        "school": "Udacity",
+        "date": "2016-present",
+        "url": "https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004"
     }],
     "display": function() {
         for (var school in education.schools) {
