@@ -7,7 +7,7 @@ var bio = {
     "contacts": {
         "mobile": "973-970-0931",
         "email": "mcortez121@gmail.com",
-        "github": "mathezCortez",
+        "github": "<a href = 'https://github.com/mathewCortez'>mathezCortez</a>",
         "twitter": "none",
         "location": "Randolph, NJ"
     },
