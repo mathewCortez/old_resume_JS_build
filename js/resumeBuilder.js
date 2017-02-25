@@ -182,8 +182,8 @@ var projects = {
         "dates": "AUGUST 2016",
         "description": "A single-page web application, built using the Knockout framework, that displays a Google Map of an area and various points of interest. The map displays concerts that are happening today in Boston. The search bar can be used to narrow down the concerts by name. The concert information come from Jambase through an AJAX call. If the user clicks on the map marker then the concert information will be displayed. It will show the concert artist, venue, address, and a URL to purchase a ticket if Jambase has a URL for that concert.",
         "images": [
-            "images/map-min.PNG",
-            "images/map-hide-min.PNG"
+            "images/map-min.png",
+            "images/map-hide-min.png"
             
         ]
     },
