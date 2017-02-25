@@ -7,7 +7,7 @@ var bio = {
     "contacts": {
         "mobile": "973-970-0931",
         "email": "mcortez121@gmail.com",
-        "github": "<a href = 'https://github.com/mathewCortez'>mathezCortez</a>",
+        "github": "mathezCortez",
         "twitter": "none",
         "location": "Randolph, NJ"
     },
@@ -176,7 +176,16 @@ var projects = {
             "images/bloglogin.png"
         ]
         
-    },  
+    }, 
+        {
+        "title": "<a href='https://github.com/mathewCortez/movies' target='_blank'>Movie Trailer Site</a>",
+        "dates": "SEPTEMBER 2016",
+        "description": "Server-side code written in Python to store a list of my favorite movies, including box art imagery and a movie trailer URL. This data is then served to a web page using HTML and CSS allowing visitors to review these movies and watch the trailers.",
+        "images": [
+            "images/movies.png"
+            "images/trailers.png"
+        ]
+    },
         {
         "title": "<a href='map/index.html' target='_blank'>Frontend-nanodegree-neighborhood-map -- Click to view</a>",
         "dates": "AUGUST 2016",
