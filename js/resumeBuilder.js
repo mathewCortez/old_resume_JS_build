@@ -124,6 +124,11 @@ var education = {
         "date": "2016",
         "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
 
+    }, {
+        "title": "Full Stack Web Developement",
+        "school": "Udacity",
+        "date": "2016-2017",
+        "url": "https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004"
     }],
     "display": function() {
         for (var school in education.schools) {
@@ -162,6 +167,17 @@ var education = {
 
 var projects = {
     "projects": [{
+        "title": "<a href='http://blog-158622.appspot.com/' target='_blank'>Multi-User Blog -- Click to view</a>",
+        "dates": "FEBRUARY 2017",
+        "description":"In this project, I built a multi-user blog where users can sign in and post blog posts as well as 'Like' and 'Comment' on other posts made on the blog. I have hosted this blog on Google App Engine and have created an authentication system for users to be able to register and sign in and then create blog posts. This project was created using python with jnija2. Most of the style is down with Bootstrap.",
+        "images": [
+            "images/blogfront.png",
+            "images/bloglog.png",
+            "images/bloglogin.png"
+        ]
+        
+    },  
+        {
         "title": "<a href='map/index.html' target='_blank'>Frontend-nanodegree-neighborhood-map -- Click to view</a>",
         "dates": "AUGUST 2016",
         "description": "A single-page web application, built using the Knockout framework, that displays a Google Map of an area and various points of interest. The map displays concerts that are happening today in Boston. The search bar can be used to narrow down the concerts by name. The concert information come from Jambase through an AJAX call. If the user clicks on the map marker then the concert information will be displayed. It will show the concert artist, venue, address, and a URL to purchase a ticket if Jambase has a URL for that concert.",
