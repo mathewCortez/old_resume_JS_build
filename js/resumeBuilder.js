@@ -178,6 +178,18 @@ var projects = {
         
     }, 
         {
+        "title": "<a href= 'https://github.com/mathewCortez/FSWD-Item-catalog' target='_blank'>FSWD-Item-Catalog -- Click to view</a>",
+        "dates": "JANUARY 2017",
+        "description": "This is a python module that creates a website and JSON API for a list of hobbies. Each hobby displays the items required to participate in this hobby along with the items purpose and cost. Authentication is provided via OAuth, users can sign-in with their Google account to add to the catalog. Registered users will have ability to edit and delete their own items. This application uses Flask,SQL Alchemy, JQuery,CSS, Javascript, and OAuth2 to create the Item catalog website.  Additionally, all data is stored within a PostgreSQL database.",
+        "images": [
+            "images/hobby.png",
+            "images/hobbyitem.png",
+            "images/hobbylogin.png",
+            "images/hobbywithuser.png",
+            "images/newhobby.png"
+        ]
+    },
+        {
         "title": "<a href='https://github.com/mathewCortez/movies' target='_blank'>Movie Trailer Site</a>",
         "dates": "SEPTEMBER 2016",
         "description": "Server-side code written in Python to store a list of my favorite movies, including box art imagery and a movie trailer URL. This data is then served to a web page using HTML and CSS allowing visitors to review these movies and watch the trailers.",
