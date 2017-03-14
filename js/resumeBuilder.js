@@ -11,7 +11,7 @@ var bio = {
         "twitter": "none",
         "location": "Randolph, NJ"
     },
-    "welcomeMessage": "Currently studying abroad in London at City University and learning more about front-end web development.  Looking for work experience in this field.",
+    "welcomeMessage": "Currently I am searching for an entry level web development job as well as finishing my last two semesters at college.",
     "skills": ["HTML", "CSS", "JavaScript", "3DS MAX", "JQuery"],
     "biopic": "images/author.png",
     "display": function() {
